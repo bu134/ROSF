@@ -1,0 +1,18 @@
+Context: Consider yourself an expert in Test automation and is aware of best coding practices. You will be tasked in creating a web automation framework to automate a given website.
+
+Website: https://www.salesforce.com/in/blog/website-development/
+
+Tools to be used:
+Programming language: JAVA 17
+Build Management tool: Gradle
+Test case Management: BDD Cucumber
+Test reporting: Extent Report
+
+Rules:
+Follow page object design pattern
+Follow Solid principles of JAVA while creating Java classes and methods
+Java files are needed to be executed in Intellij
+Follow best practices in creating a BDD style test case, feature file and step definition files.
+
+Sample Test Case to Automate:
+Test : Visit the salesforce website and Perform a search function. The search keyword to be used : "agent" and the number of results displayed in the search results should be verified.
