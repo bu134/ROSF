@@ -4,4 +4,5 @@ Feature: Salesforce Blog Search
     Given I launch the Salesforce blog page
 #    When I search for the keyword "agent"
 #    Then I should see search results displayed
-    Then I should see Share Article Section
+    And I should see Share Article Section
+    Then I verify the social media links available

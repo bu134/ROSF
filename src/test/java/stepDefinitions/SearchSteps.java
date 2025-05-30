@@ -51,6 +51,16 @@ public class SearchSteps {
 
     }
 
+    @Then("I verify the social media links available")
+    public void i_should_see_social_media_icons_and_links() {
+        if (homePage.verifySocialMediaIconsAndLinks()){
+            ExtentReportManager.logPass("Linked Label: " + homePage.fetchSocialMediaLabel());
+        }else{
+            ExtentReportManager.logFail("Linked Social Media Link not found");
+        }
+        Assert.assertTrue("Verify Linked In Link", homePage.verifySocialMediaIconsAndLinks());
+    }
+
     @After
     public void tearDown() {
         DriverFactory.quitDriver();

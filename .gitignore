@@ -1,0 +1,36 @@
+# Gradle
+.gradle
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Project specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+bin/
+out/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar
+
+# Local configuration files
+local.properties
