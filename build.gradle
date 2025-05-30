@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.cucumber:cucumber-java:7.15.0'
+    implementation 'io.cucumber:cucumber-junit:7.15.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+    implementation 'com.aventstack:extentreports:5.0.9'
+}
+
+test {
+    useJUnitPlatform()
+}
