@@ -30,7 +30,7 @@ public class ChatController {
             String userInput = scanner.nextLine().trim().toLowerCase();
 
             if (userInput.equals("exit")) {
-                System.out.println("Bot: Goodbye!");
+                System.out.println("(Ro)Bot: Goodbye!");
                 DriverFactory.quitDriver();
                 ExtentReportManager.flushReport();
                 break;
