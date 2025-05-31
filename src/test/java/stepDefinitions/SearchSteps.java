@@ -16,12 +16,12 @@ public class SearchSteps {
     private HomePage homePage;
     private SearchResultsPage searchResultsPage;
 
-    @Before
-    public void setUp(io.cucumber.java.Scenario scenario) {
-        driver = DriverFactory.initDriver();
-        ExtentReportManager.initReport();
-        ExtentReportManager.createTest(scenario.getName());
-    }
+//    @Before
+//    public void setUp(io.cucumber.java.Scenario scenario) {
+//        driver = DriverFactory.initDriver();
+//        ExtentReportManager.initReport();
+//        ExtentReportManager.createTest(scenario.getName());
+//    }
 
     @Given("I launch the Salesforce blog page")
     public void i_launch_the_salesforce_blog_page() {
@@ -61,9 +61,9 @@ public class SearchSteps {
         Assert.assertTrue("Verify Linked In Link", homePage.verifySocialMediaIconsAndLinks());
     }
 
-    @After
-    public void tearDown() {
-        DriverFactory.quitDriver();
-        ExtentReportManager.flushReport();
-    }
+//    @After
+//    public void tearDown() {
+//        DriverFactory.quitDriver();
+//        ExtentReportManager.flushReport();
+//    }
 }
